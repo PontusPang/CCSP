@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8EBF4AB-B016-47B8-9362-BA348DFBCC18}</ProjectGuid>
+    <RootNamespace>CS</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvCANIO.h" />
+    <ClInclude Include="AdvCanThread.h" />
+    <ClInclude Include="CANDlg.h" />
+    <ClInclude Include="CS.h" />
+    <ClInclude Include="CWMPControls.h" />
+    <ClInclude Include="CWMPPlayer4.h" />
+    <ClInclude Include="CWMPSettings.h" />
+    <ClInclude Include="DISPDlg.h" />
+    <ClInclude Include="excel9.h" />
+    <ClInclude Include="GetHDSerial.h" />
+    <ClInclude Include="LOGINDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Security.h" />
+    <ClInclude Include="SerialPort.h" />
+    <ClInclude Include="SETDlg.h" />
+    <ClInclude Include="SetDlgDQ.h" />
+    <ClInclude Include="SetDlgFGYSJ.h" />
+    <ClInclude Include="SetDlgFMAF.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabSheet.h" />
+    <ClInclude Include="ThreadProp.h" />
+    <ClInclude Include="ThreadProp_TempTemp.h" />
+    <ClInclude Include="ThreadProp_TimeTemp.h" />
+    <ClInclude Include="ThreadProp_TimeTime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap_o.bmp" />
+    <Image Include="res\bitmap_s.bmp" />
+    <Image Include="res\bitmap_u.bmp" />
+    <Image Include="res\CCSP.bmp" />
+    <Image Include="res\CCSP1.bmp" />
+    <Image Include="res\QuitBtn.bmp" />
+    <Image Include="res\UrgentBtn.bmp" />
+    <Image Include="res\XSCS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CS.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdvCanIO.cpp" />
+    <ClCompile Include="AdvCanThread.cpp" />
+    <ClCompile Include="CANDlg.cpp" />
+    <ClCompile Include="CS.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="CWMPControls.cpp" />
+    <ClCompile Include="CWMPPlayer4.cpp" />
+    <ClCompile Include="CWMPSettings.cpp" />
+    <ClCompile Include="DISPDlg.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="excel9.cpp" />
+    <ClCompile Include="GetHDSerial.cpp" />
+    <ClCompile Include="LOGINDlg.cpp" />
+    <ClCompile Include="Security.cpp" />
+    <ClCompile Include="SerialPort.cpp" />
+    <ClCompile Include="SETDlg.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="SetDlgDQ.cpp" />
+    <ClCompile Include="SetDlgFGYSJ.cpp" />
+    <ClCompile Include="SetDlgFMAF.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="TabSheet.cpp" />
+    <ClCompile Include="ThreadProp.cpp" />
+    <ClCompile Include="ThreadProp_TempTemp.cpp" />
+    <ClCompile Include="ThreadProp_TimeTemp.cpp" />
+    <ClCompile Include="ThreadProp_TimeTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CS.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CS.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
