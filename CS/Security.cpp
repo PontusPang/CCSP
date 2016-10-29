@@ -188,7 +188,7 @@ void InitCS()
 	g_pStCS[14].strLoginPwd = "tg168";
 	g_pStCS[14].strCS_SQL = "CS_ZW17_150313";
 	g_pStCS[14].dwNumVolumeSerial = 0x488B99D3;
-	g_pStCS[14].strHDSerial = "G156808D";
+	g_pStCS[14].strHDSerial = "";
 	g_pStCS[14].bFlagEnMusic = FALSE;
 	g_pStCS[14].strCS_Name = "TigerWit";
 	g_pStCS[14].strCS_Worker = "SonggaV";
